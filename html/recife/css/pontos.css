@@ -22,7 +22,6 @@ img {
     max-width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
 }
 
 p {
@@ -31,4 +30,32 @@ p {
 
 section {
     margin-bottom: 20px;
+}
+
+/* Flexbox styling */
+.ponto-turistico {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.content img {
+    flex: 1;
+    max-width: 300px;
+}
+
+.content p {
+    flex: 2;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
 }
